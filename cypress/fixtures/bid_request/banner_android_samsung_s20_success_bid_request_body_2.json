@@ -1,0 +1,85 @@
+{
+  "at": 1,
+  "cur": ["USD"],
+  "device": {
+    "ua": "Mozilla/5.0 (Linux; Android 13; SM-G980F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.131 Mobile Safari/537.36",
+    "geo": {
+      "country": "LTU"
+    },
+    "dnt": 0,
+    "js": 1,
+    "ip": "78.56.191.152",
+    "sua": {
+      "browsers": [
+        {
+          "brand": "Chromium",
+          "version": ["116", "0", "5845", "163"]
+        },
+        {
+          "brand": "Not)A;Brand",
+          "version": ["24", "0", "0", "0"]
+        },
+        {
+          "brand": "Google Chrome",
+          "version": ["116", "0", "5845", "163"]
+        }
+      ],
+      "mobile": 1,
+      "model": "SM-A217F",
+      "platform": {
+        "brand": "Android",
+        "version": ["12", "0", "0"]
+      },
+      "source": 2
+    }
+  },
+  "id": "64fb1019b11353017946",
+  "imp": [
+    {
+      "id": "300_250",
+      "banner": {
+        "format": [
+          {
+            "w": 300,
+            "h": 250
+          }
+        ],
+        "w": 300,
+        "h": 250,
+        "id": "300_250"
+      },
+      "tagid": "1",
+      "bidfloor": 0.01,
+      "secure": 1
+    }
+  ],
+  "site": {
+    "id": "97cc83bb9917a07bdf3d53e8507157b2",
+    "name": "demo.eskimi.com",
+    "domain": "demo.eskimi.com",
+    "cat": ["IAB1"],
+    "page": "https:\\/\\/demo.eskimi.com",
+    "publisher": {
+      "id": 111,
+      "name": "Eskimi"
+    },
+    "content": {
+      "language": "en"
+    }
+  },
+  "tmax": 300,
+  "user": {
+    "buyeruid": "d005253b-e989-4009-a4c0-df6df19e8dee",
+    "ext": {
+      "consent": "1"
+    }
+  },
+  "regs": {
+    "ext": {
+      "gdpr": 1
+    }
+  },
+  "ext": {
+    "eskimiNbr": 1
+  }
+}

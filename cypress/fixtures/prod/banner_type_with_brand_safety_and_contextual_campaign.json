@@ -1,0 +1,38 @@
+{
+  "name_and_type": {
+    "platform_type": ["Eskimi"],
+    "creative_type": "Banner",
+    "campaign_type": "Display_Ads",
+    "campaign_type_id": 1,
+    "campaign_name": "automation_testing"
+  },
+  "campaign_goal_info": {
+    "campaign_goal": "Awareness",
+    "primary_objective": "cpm_currency",
+    "primary_objective_value": "2"
+  },
+  "launch_date_and_budget": {
+    "date_range": "Today",
+    "bid_cpm": "1.00",
+    "daily_budget": "1.00",
+    "total_budget": "2.00",
+    "budget_pacing": "none"
+  },
+  "location_and_audiences": {
+    "country_name": "Lithuania"
+  },
+  "brand_safety": {
+    "keywords": "automation_brand_safety (17 keywords)"
+  },
+  "landing_and_creatives": {
+    "click_url_type": "landing_page",
+    "click_url": "https://business.eskimi.com",
+    "ad_domain": "www.eskimi.com",
+    "creative": "CampaignCreationSelenium",
+    "creative_set_id": 62688
+  },
+  "campaign_approve": {
+    "advertiser": "Eskimi",
+    "exchange": "_Test QA margin"
+  }
+}

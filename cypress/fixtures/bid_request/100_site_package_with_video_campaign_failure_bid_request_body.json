@@ -1,0 +1,145 @@
+{
+  "at": 1,
+  "bcat": ["IAB26", "IAB18-2", "IAB25"],
+  "cur": ["USD"],
+  "device": {
+    "devicetype": 4,
+    "ip": "213.159.56.39",
+    "model": "SM-G998B",
+    "ua": "Mozilla/5.0 (Linux; Android 13; SM-G998B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36",
+    "geo": {
+      "city": "vilnius",
+      "country": "ltu",
+      "ext": {},
+      "lat": 54.6872,
+      "lon": 25.2797,
+      "region": "LT-VL",
+      "type": 2,
+      "zip": "01100"
+    },
+    "os": "Android",
+    "osv": "Other",
+    "language": "lt",
+    "make": "Samsung",
+    "ext": {},
+    "js": 1,
+    "dnt": 0
+  },
+  "id": "9b3492b0-2b7e-45fe-a2cc-143860760af8",
+  "imp": [
+    {
+      "bidfloor": 0.299951,
+      "bidfloorcur": "USD",
+      "exp": 7200,
+      "id": "1",
+      "metric": [
+        {
+          "type": "viewability",
+          "value": 0.76,
+          "vendor": "Moat"
+        }
+      ],
+      "secure": 1,
+      "tagid": "116419",
+      "video": {
+        "protocols": [1, 11, 12, 13, 14, 2, 3, 4, 5, 6, 7, 8],
+        "linearity": 1,
+        "skip": 1,
+        "placement": 3,
+        "minduration": 1,
+        "w": 213,
+        "maxbitrate": 4000,
+        "mimes": ["video/mp4", "application/javascript", "video/webm"],
+        "minbitrate": 240,
+        "playbackmethod": [6],
+        "startdelay": 0,
+        "plcmt": 2,
+        "battr": [9, 10, 17],
+        "maxduration": 200,
+        "api": [2, 7],
+        "h": 120
+      }
+    }
+  ],
+  "regs": {
+    "coppa": 0,
+    "ext": {
+      "gdpr": 1
+    }
+  },
+  "site": {
+    "cat": ["IAB1-2"],
+    "content": {
+      "context": 102,
+      "cat": ["IAB1-2"]
+    },
+    "domain": "www.boredpanda.com",
+    "id": "541147595",
+    "mobile": 1,
+    "page": "https://www.boredpanda.com/fake-lawyer-brian-mwenda-arrested/?utm_source=facebook&utm_medium=social&utm_campaign=boredpanda&utm_term=stories&utm_content=style_5&fbclid=IwAR2063nO_kt9RZ2ZN2miZ_qQKWS1E_OlZckUt6IL4JAzpwIJsk4Zt6XxNS8",
+    "publisher": {
+      "id": "540258065"
+    }
+  },
+  "source": {
+    "ext": {
+      "schain": {
+        "complete": 1,
+        "nodes": [
+          {
+            "asi": "primis.tech",
+            "hp": 1,
+            "sid": "27018"
+          },
+          {
+            "asi": "openx.com",
+            "hp": 1,
+            "rid": "9b3492b0-2b7e-45fe-a2cc-143860760af8",
+            "sid": "540258065"
+          }
+        ],
+        "ver": "1.0"
+      }
+    },
+    "fd": 1,
+    "pchain": "6a698e2ec38604c6:540258065"
+  },
+  "test": 0,
+  "tmax": 160,
+  "user": {
+    "buyeruid": "b48e2179-d2b0-4377-b460-ea3dfceea087",
+    "ext": {
+      "consent": "CPzOQwAPzOQwAAKAwAENDaCsAP_AAH_AABaYJsNV_H__bW9r8X7_aft0eY1P9_j77uQxBhfJE-4F3LvW_JwXx2E5NF36tqoKmRoEu3ZBIUNlHJHUTVmwaogVryHsak2cpTNKJ6BkkFMRM2dYCF5vm4tjeQKY5_p_d3fx2D-t_dv839zzz81Xn3d5f--0-PCdU5-9Dfn9fRfb-9IP9_78v8v8_l_rk2_eT13_pcvr_D--f_87_XW-9EFCE-AAgABcADgAPgAoACoAFwAOQAeACAAF0AMAAygBoAGoAOAAeABEACYAE8AKQAVYAuAC6AGIAMwAaAA3gB6AD-AIQAQ0AiACJAEcAJYATQAowBSgDDgGUAZYAzQBogDZgHMAc8A7gDvAHsAPiAfYB-wD_AQAAgcBBwEIAIjARYBGACNAEcAJSAT8AoMBTwFQAKuAWIAuYBdYC8gL0AYoAz4BogDXgG0ANwAcQA44B0gDqAHbAPsAf8BCACHQEXwI8Aj2BIgEiwJUAlYBMUCZAJlATOAm0BOwCh4FIAUiApOBTQFNgKfAVUAqwBXYCwgFigLRAWoAtgBcAC5AF0ALtAXfAvIC8wF9AMEAYMAw0BiADFgGPAMhgZGBkkDJgMnAZUAywBlwDOQGeAM-AaIA0YBpADTQGpgNVgawBrIDXgG0ANsAbcA3KBugG6gN8AcAA4IBxYDj4HJgcoA5cBzoDnwHWAO2AdyA8EB44DygHtAPigfIB8sD6wPtgfsB-4EFAJEASUAlGBLQCY4EyQJpBBQAAAAA.YAAAAAAAAAAA",
+      "eids": [
+        {
+          "source": "adserver.org",
+          "uids": [
+            {
+              "ext": {
+                "rtiPartner": "TDID"
+              },
+              "id": "183bf965-e251-4338-843c-78ea08dc8c89"
+            }
+          ]
+        },
+        {
+          "source": "id5-sync.com",
+          "uids": [
+            {
+              "id": "0"
+            }
+          ]
+        },
+        {
+          "source": "crwdcntrl.net",
+          "uids": [
+            {
+              "id": "3df7564955f091f311cc6464651ca9fb927a5025c90958ced1b6f22db557c00b"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "dcc58931-6ca6-4959-a135-009d27f4c0df"
+  }
+}

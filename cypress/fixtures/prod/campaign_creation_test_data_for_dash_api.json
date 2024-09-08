@@ -1,0 +1,24 @@
+{
+  "userId": 7722,
+  "name_and_type": {
+    "campaign_name": "automation_testing_api"
+  },
+  "autoStart": 1,
+  "launch_date_and_budget": {
+    "date_range": {
+      "from": "2024-08-02",
+      "to": "2024-08-10"
+    },
+    "bid_cpm": "1.00",
+    "daily_budget": "1.00",
+    "total_budget": "2.00"
+  },
+  "location_and_audiences": {
+    "country_name": "lt"
+  },
+  "landing_and_creatives": {
+    "click_url": "https://business.eskimi.com",
+    "ad_domain": "www.eskimi.com",
+    "creative_set_id": 62688
+  }
+}

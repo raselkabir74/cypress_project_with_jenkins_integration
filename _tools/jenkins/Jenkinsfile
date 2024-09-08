@@ -1,0 +1,148 @@
+#!groovy
+
+pipeline {
+    agent {
+        label 'dsp-dashboard-cypress'
+    }
+    parameters {
+        string(
+                name: 'BRANCH',
+                defaultValue: 'master',
+                trim: true,
+                description: 'The Git branch from which the tests will be run'
+        )
+    }
+    options {
+        timestamps()
+        ansiColor('xterm')
+        timeout(time: 30, unit: 'MINUTES')   // timeout on whole job
+        buildDiscarder(logRotator(numToKeepStr: '100'))
+        disableConcurrentBuilds()
+    }
+    environment {
+        SLACK_CHANNEL = "_jenkins-builds_qa"
+        SLACK_TEAM_DOMAIN = "eskimi"
+        SLACK_TOKEN = credentials("ba2e7e7b-35ab-4d63-906c-e3ba8426f975")
+    }
+    stages {
+        stage('E2E/Smoke Tests') {
+            steps {
+                withCredentials([
+                    usernamePassword(credentialsId: 'dsp-dashboard-e2e-test', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD'),
+                    usernamePassword(credentialsId: 'dsp-dashboard-e2e-client', usernameVariable: 'CLIENT_ID', passwordVariable: 'CLIENT_SECRET')
+                ]) {
+                    sh "_tools/jenkins/run.sh ${BRANCH}"
+                }
+            }
+        }
+    }
+    post {
+        always {
+            archiveArtifacts artifacts: 'results/screenshot_results.zip', fingerprint: true
+        }
+        cleanup {
+            wrap([$class: 'BuildUser']) {
+                sendNotifications(currentBuild.currentResult)
+            }
+        }
+    }
+}
+
+def sendNotifications(String buildResult) {
+    if (buildResult != 'ABORTED'){
+        def status = ""
+        def color = ""
+        def buildBy = getBuildBy()
+        def emoji = ""
+        // def summary = currentBuild.rawBuild.getAction(junit.TestResultAction.class).result.summary
+        def summary = junit testResults: 'results/test_results.xml'
+
+        if (summary.failCount == 0) {
+            status = "Successful"
+            color = "good"
+            emoji = "qc_passed"
+        } else if (buildResult == 'ABORTED') {
+            status = "Aborted"
+            color = "#808080"
+            emoji = "heavy_minus_sign"
+        } else if (summary.failCount != 0) {
+            color = "danger"
+            status = "Failed"
+            emoji = "qc_failed"
+        } else {
+            color = "warning"
+            status = "Unstable"
+            emoji = "warning"
+        }
+        def subject = "${env.JOB_NAME} - #${env.BUILD_NUMBER}"
+        def changeString = getChangeString()
+        def changes = "Changes:\n" + changeString
+        def testStatus = "\n *Test Summary* - ${summary.totalCount}, Failures: ${summary.failCount}, Skipped: ${summary.skipCount}, Passed: ${summary.passCount}"
+
+        def message = "$subject $status after ${currentBuild.durationString.replace(" and counting", "")} (<${env.BUILD_URL}display/redirect?page=tests|Open>)\n" +
+                "$changes$testStatus$buildBy"
+
+        def slackResponse = slackSend(
+            teamDomain: env.SLACK_TEAM_DOMAIN,
+            channel: env.SLACK_CHANNEL,
+            token: env.SLACK_TOKEN,
+            botUser: true,
+            iconEmoji: ":jenkins-e2e:",
+            notifyCommitters: false,
+            color: color,
+            message: message
+        )
+        slackResponse.addReaction(emoji)
+
+        if (params.REPORT_TO_DASHBOARD_TEAM) {
+            def slackResponse2 = slackSend(
+                teamDomain: env.SLACK_TEAM_DOMAIN,
+                channel: env.SLACK_CHANNEL_OPTIONAL,
+                token: env.SLACK_TOKEN,
+                botUser: true,
+                iconEmoji: ":jenkins-e2e:",
+                notifyCommitters: false,
+                color: color,
+                message: message
+            )
+            slackResponse2.addReaction(emoji)
+        }
+    }
+}
+
+def getBuildBy() {
+    def buildUserId = slackUserIdFromEmail(env.BUILD_USER_EMAIL)
+    if (buildUserId == null){
+        def commitUserIds = slackUserIdsFromCommitters(botUser: true)
+        def commitUser = commitUserIds.collect { "<@$it>" }.join(' ')
+        if (commitUserIds == []) {
+            return (String)"\nBuild by: Timer/PR"
+        } else{
+            return (String)"\nCommit by: $commitUser"
+        }
+    } else {
+        return (String)"\nBuild by: <@$buildUserId>"
+    }
+}
+
+// Retrieve changelog for notifications adapted from https://support.cloudbees.com/hc/en-us/articles/217630098-How-to-access-Changelogs-in-a-Pipeline-Job-
+def getChangeString() {
+    MAX_MSG_LEN = 100
+    def changeString = ""
+
+    echo "Gathering SCM changes"
+    def changeLogSets = currentBuild.changeSets
+    for (int i = 0; i < changeLogSets.size(); i++) {
+        def entries = changeLogSets[i].items
+        for (int j = 0; j < entries.length; j++) {
+            def entry = entries[j]
+            truncated_msg = entry.msg.take(MAX_MSG_LEN)
+            changeString += " - ${truncated_msg} [${entry.author}]\n"
+        }
+    }
+
+    if (!changeString) {
+        changeString = " - No new changes"
+    }
+    return changeString
+}

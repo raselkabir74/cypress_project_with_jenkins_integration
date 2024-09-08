@@ -1,0 +1,159 @@
+{
+  "at": 1,
+  "cur": ["USD"],
+  "device": {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "geo": {
+      "country": "LTU"
+    },
+    "dnt": 0,
+    "js": 1,
+    "ip": "82.135.200.92"
+  },
+  "id": "653103f14036a1557260",
+  "imp": [
+    {
+      "bidfloor": 0.108,
+      "bidfloorcur": "USD",
+      "exp": 3600,
+      "ext": {},
+      "id": "1",
+      "instl": 0,
+      "metric": [
+        {
+          "type": "viewability",
+          "value": 0.319279,
+          "vendor": "EXCHANGE"
+        }
+      ],
+      "native": {
+        "request": {
+          "assets": [
+            {
+              "id": 1,
+              "required": 1,
+              "title": {
+                "len": 2000
+              }
+            },
+            {
+              "data": {
+                "len": 140,
+                "type": 1
+              },
+              "id": 5,
+              "required": 1
+            },
+            {
+              "data": {
+                "len": 200,
+                "type": 2
+              },
+              "id": 6,
+              "required": 0
+            },
+            {
+              "data": {
+                "len": 2000,
+                "type": 501
+              },
+              "id": 11,
+              "required": 0
+            },
+            {
+              "id": 13,
+              "required": 0,
+              "video": {
+                "api": [2],
+                "maxduration": 1200,
+                "mimes": ["video/mp4", "application/javascript"],
+                "minduration": 3,
+                "protocols": [5, 6, 2, 7, 3, 8]
+              }
+            },
+            {
+              "data": {
+                "len": 25,
+                "type": 12
+              },
+              "id": 14,
+              "required": 0
+            },
+            {
+              "id": 33,
+              "img": {
+                "hmin": 315,
+                "type": 3,
+                "wmin": 600
+              },
+              "required": 1
+            },
+            {
+              "id": 31,
+              "img": {
+                "hmin": 48,
+                "type": 1,
+                "wmin": 48
+              },
+              "required": 0
+            },
+            {
+              "data": {
+                "len": 20000,
+                "type": 504
+              },
+              "id": 504,
+              "required": 0
+            }
+          ],
+          "context": 1,
+          "eventtrackers": [
+            {
+              "event": 2,
+              "methods": [2, 1]
+            },
+            {
+              "event": 1,
+              "methods": [2, 1]
+            }
+          ],
+          "plcmtcnt": 1,
+          "plcmttype": 1,
+          "privacy": 1,
+          "ver": "1.2"
+        }
+      },
+      "secure": 1,
+      "tagid": "sharethrough_LCPPGeSQcjvBMPdk62JSdYcj"
+    }
+  ],
+  "site": {
+    "id": "97cc83bb9917a07bdf3d53e8507157b2",
+    "name": "demo.eskimi.com",
+    "domain": "demo.eskimi.com",
+    "cat": ["IAB1"],
+    "page": "https://demo.eskimi.com/demo",
+    "publisher": {
+      "id": 111,
+      "name": "Eskimi"
+    },
+    "content": {
+      "language": "en"
+    }
+  },
+  "tmax": 300,
+  "user": {
+    "buyeruid": "bd583fd6-38ac-4c3c-be93-4cad8b8f74f7",
+    "ext": {
+      "consent": "1"
+    }
+  },
+  "regs": {
+    "ext": {
+      "gdpr": 1
+    }
+  },
+  "ext": {
+    "eskimiNbr": 1
+  }
+}

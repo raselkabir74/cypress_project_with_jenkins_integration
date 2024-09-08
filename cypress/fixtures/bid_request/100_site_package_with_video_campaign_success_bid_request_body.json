@@ -1,0 +1,144 @@
+{
+  "at": 2,
+  "bcat": ["BSW2", "BSW12", "IAB9-9", "BSW4", "IAB26", "BSW10", "IAB25-3", "BSW1"],
+  "cur": ["USD"],
+  "device": {
+    "connectiontype": 0,
+    "devicetype": 2,
+    "ip": "95.215.142.0",
+    "model": "Desktop",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "geo": {
+      "city": "Kaunas",
+      "country": "lt",
+      "region": "KU-15",
+      "zip": "44001"
+    },
+    "os": "Windows",
+    "lmt": 0,
+    "sua": {
+      "browsers": [
+        {
+          "brand": "Google Chrome",
+          "version": ["117"]
+        },
+        {
+          "brand": "Not",
+          "version": ["A=Brand"]
+        },
+        {
+          "brand": "Chromium",
+          "version": ["117"]
+        }
+      ],
+      "mobile": 0,
+      "platform": {
+        "brand": "Windows"
+      },
+      "source": 1
+    },
+    "dnt": 0
+  },
+  "ext": {
+    "media_src": "adform",
+    "ssp": "adform"
+  },
+  "id": "74110c27-8d2f-3e5f-a0a7-4593c2a738b1",
+  "imp": [
+    {
+      "bidfloor": 0.378,
+      "bidfloorcur": "USD",
+      "exp": 3300,
+      "ext": {},
+      "id": "1",
+      "instl": 0,
+      "secure": 1,
+      "tagid": "adform_1746108",
+      "video": {
+        "protocols": [1, 2, 3, 4, 5, 6],
+        "maxextended": 0,
+        "linearity": 1,
+        "pos": 0,
+        "placement": 1,
+        "minduration": 1,
+        "ext": {
+          "player_type": 2
+        },
+        "boxingallowed": 1,
+        "w": 320,
+        "maxbitrate": 4096,
+        "mimes": [
+          "video/quicktime",
+          "video/mpeg",
+          "application/x-shockwave-flash",
+          "video/x-ms-wmv",
+          "video/ogg",
+          "video/x-matroska",
+          "video/x-f4v",
+          "video/3gpp",
+          "video/x-m4v",
+          "application/javascript",
+          "video/webm",
+          "video/x-flv",
+          "video/mp4"
+        ],
+        "minbitrate": 128,
+        "startdelay": 0,
+        "maxduration": 40,
+        "api": [1, 2],
+        "h": 180
+      }
+    }
+  ],
+  "regs": {
+    "ext": {
+      "gdpr": 1
+    }
+  },
+  "site": {
+    "domain": "9gag.com",
+    "id": "adform_87617",
+    "mobile": 0,
+    "page": "https://9gag.com/",
+    "publisher": {
+      "id": "adform_2078"
+    },
+    "ref": "https://9gag.com/"
+  },
+  "source": {
+    "ext": {
+      "schain": {
+        "complete": 1,
+        "nodes": [
+          {
+            "asi": "primis.tech",
+            "hp": 1,
+            "sid": "30749"
+          },
+          {
+            "asi": "adform.com",
+            "hp": 1,
+            "sid": "2078"
+          },
+          {
+            "asi": "bidswitch.com",
+            "hp": 1,
+            "rid": "74110c27-8d2f-3e5f-a0a7-4593c2a738b1",
+            "sid": "2078"
+          }
+        ],
+        "ver": "1.0"
+      }
+    },
+    "fd": 1,
+    "pchain": "9f5210a2f0999e32:2078-35d5010d7789b49d:adform",
+    "tid": "bd1c0f55-4475-4567-ba72-7dfef273ebbf"
+  },
+  "tmax": 95,
+  "user": {
+    "ext": {
+      "consent": "CPzhoAgPzhoAgAcABBENDaCsAP_AAH_AABJ4JsNf_X__b2_r-_7_f_t0eY1P9_7__-0zjhfdF-8N3f_X_L8X52M5vF36tqoKuR4ku3bBIUdlHPHcTVmw6okVryPsbk2cr7NKJ7PkmlMbM2dYGH9_n9_z-ZKY7___f__z_v-v___9____7-3f3__5__--__e_V_-9zfn9_____9vP___9v-_9_3________3_r9_7_D_-f_87_XW-9EFAAkw0LiALsiRkJtowigQAjCsJCqBQAUQCQtEBhC6uCnZXAT6wEQAgRQAPBACGAFGQAIAABIAkIgAkCOBAIBAIBAACABUIBAAxsAA8ALQQCAAUB0LFOKAJQLCDIjIiFMCEKRIKCeyoQSg_UFcIQyywIoNH_FQgIVkDFYEQkLF6HAEgJeJJA91RvgAIQAoBRShWIpPzAEOCZstVeKIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA.f_gAD_gAAAAA"
+    }
+  },
+  "wseat": ["364"]
+}

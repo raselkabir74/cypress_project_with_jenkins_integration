@@ -1,0 +1,27 @@
+{
+  "campaign_name": "mass_edit_campaign",
+  "bid_amount": "10.00",
+  "daily_budget": "100.00",
+  "total_budget": "110.00",
+  "landing_url": "https://www.eskimi.com",
+  "ad_domain_url": "www.eskimi.com",
+  "package": "automation_testing_100_sites (Open Auction only)",
+  "package_type": "Include only",
+  "packages": [
+    "automation_testing_100_sites (Open Auction only)",
+    "Kids and Family-Oriented Games (Open Auction and PMP)",
+    "Not relevant apps_exclusion (Open Auction only)"
+  ],
+  "package_items": [
+    "Custom bid",
+    "Custom daily budget",
+    "Custom total budget",
+    "Include only",
+    "Exclude",
+    "Disable impression capping",
+    "Disable auto optimisation",
+    "Disable budget pacing for this package",
+    "Disable App/Site category exclusion",
+    "Allow multiple bids per user per second"
+  ]
+}

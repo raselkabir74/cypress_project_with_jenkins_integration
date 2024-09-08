@@ -1,0 +1,41 @@
+{
+  "name_and_type": {
+    "platform_type": ["Eskimi"],
+    "creative_type": "Banner",
+    "campaign_type": "Display_Ads",
+    "campaign_type_id": 1,
+    "campaign_name": "automation_testing"
+  },
+  "campaign_goal_info": {
+    "campaign_goal": "Awareness",
+    "primary_objective": "cpm_currency",
+    "primary_objective_value": "2"
+  },
+  "launch_date_and_budget": {
+    "date_range": "Today",
+    "bid_cpm": "0.01",
+    "daily_budget": "1.00",
+    "total_budget": "1.00"
+  },
+  "location_and_audiences": {
+    "country_name": "Lithuania"
+  },
+  "deals_and_packages": {
+    "package": "Bd premium (Open Auction only)",
+    "package_id": 128,
+    "package_include": ["include_only", "allow_multiple_bids_per_user"]
+  },
+  "landing_and_creatives": {
+    "click_url_type": "landing_page",
+    "click_url": "https://business.eskimi.com",
+    "ad_domain": "business.eskimi.com",
+    "creative": "automation_test",
+    "creative_set_id": 36287
+  },
+  "campaign_approve": {
+    "advertiser": "Eskimi",
+    "advertiser_category": "IAB3",
+    "budget_pacing": "none",
+    "exchange": "_Test QA margin"
+  }
+}

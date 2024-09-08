@@ -1,0 +1,114 @@
+{
+  "at": 1,
+  "badv": [],
+  "bcat": ["BSW12", "IAB9-9", "BSW4", "IAB26", "BSW10", "IAB25-3", "BSW1"],
+  "cur": ["USD"],
+  "device": {
+    "devicetype": 2,
+    "ip": "193.219.60.0",
+    "model": "Chrome - Windows",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "geo": {
+      "city": "Vilnius",
+      "country": "lt",
+      "region": "VL-57",
+      "type": 2,
+      "zip": "02007"
+    },
+    "os": "Windows",
+    "osv": "NT 10.0",
+    "lmt": 0,
+    "make": "Google",
+    "ext": {
+      "eskIpStatus": "ipv4"
+    },
+    "dnt": 0
+  },
+  "ext": {
+    "media_src": "smartadserver",
+    "ssp": "smartadserver"
+  },
+  "id": "829994cf-9929-30f3-99cb-6f648cd3f01f",
+  "imp": [
+    {
+      "banner": {
+        "api": [],
+        "battr": [1, 3, 8, 9, 10, 14, 17],
+        "btype": [],
+        "format": [
+          {
+            "h": 250,
+            "w": 300
+          },
+          {
+            "h": 250,
+            "w": 250
+          },
+          {
+            "h": 200,
+            "w": 200
+          },
+          {
+            "h": 150,
+            "w": 180
+          }
+        ],
+        "h": 250,
+        "mimes": ["text/html"],
+        "pos": 3,
+        "w": 250
+      },
+      "bidfloor": 0.2342,
+      "bidfloorcur": "USD",
+      "exp": 300,
+      "ext": {},
+      "id": "1",
+      "instl": 0,
+      "metric": [
+        {
+          "type": "viewability",
+          "value": 0.32,
+          "vendor": "EXCHANGE"
+        }
+      ],
+      "secure": 1,
+      "tagid": "smartadserver_226232332"
+    }
+  ],
+  "regs": {
+    "ext": {
+      "gdpr": 1
+    }
+  },
+  "site": {
+    "content": {
+      "language": "lt"
+    },
+    "domain": "delfi.lt",
+    "id": "smartadserver_1684977091",
+    "page": "https://www.delfi.lt/stilius/stiliaus-gidas/niekada-neiseis-is-mados-5-daiktai-su-kuriais-busite-tikra-zvaigzde-94422389",
+    "publisher": {
+      "id": "smartadserver_3361",
+      "name": "Digital Matter"
+    }
+  },
+  "tmax": 185,
+  "user": {
+    "buyeruid": "db7950ea-d127-45bb-befe-c0478211f2d0",
+    "ext": {
+      "consent": "CPhGGwAPhGGwACGABBENClCsAP_AAH_AAAAAJFNd_H__bW9r-f5_aft0eY1P9_r37uQzDhfNk-8F3L_W_LwX52E7NF36tq4KmR4ku1LBIUNlHMHUDUmwaokVryHsak2cpzNKJ7BEknMZOydYGF9vmxtj-QKY7_5_d3bx2D-t_9v239z3z81Xn3d53-_03LCdV5_9Dfn9fR_bc9KPt_58v8v8_____3_e__3_7997BIQAkw1biALsSxwJtAwigRAjCsJCqBQAQUAwtEBgA4OCnZWAT6wgQAIBQBGBECHAFGBAIAAAIAkIgAkCLBAAACIBAACABEIhAAQMAgoALAwCAAEA0DFEKAAQJCDIgIilMCAiBIICWyoQSgukNMIA6ywAoJEbFQAIgAAFYAAgLBwDBEgJWLBAkxRvkAIwQoBRKhWoAAAA.YAAAAAAAAAAA",
+      "eids": [
+        {
+          "source": "adserver.org",
+          "uids": [
+            {
+              "id": "661331ec-c79c-460a-af25-ca66f66507e7"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "ef7dfe68-fd31-4b91-9d36-bc56d455132b"
+  },
+  "wseat": ["364"]
+}

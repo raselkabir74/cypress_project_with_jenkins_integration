@@ -1,0 +1,41 @@
+{
+  "id": "ecaf31ad-0ca3-4ab4-8c8c-5bd8c1c56f03",
+  "imp": [
+    {
+      "id": "1",
+      "banner": {
+        "w": 300,
+        "h": 250,
+        "pos": 0
+      },
+      "bidfloor": 0.01
+    }
+  ],
+  "site": {
+    "id": "pubmatic_4104684281030515678",
+    "ref": "https://suchen.mobile.de/fahrzeuge/search.html",
+    "cat": ["IAB2", "IAB2-3"],
+    "domain": "suchen.mobile.de",
+    "page": "https://suchen.mobile.de/fahrzeuge/search.html"
+  },
+  "device": {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "geo": {
+      "country": "lt"
+    },
+    "dnt": 0,
+    "ip": "78.63.23.70"
+  },
+  "user": {
+    "id": "bd583fd6-38ac-4c3c-be93-4cad8b8f74f7",
+    "buyeruid": "bd583fd6-38ac-4c3c-be93-4cad8b8f74f7"
+  },
+  "at": 1,
+  "cur": ["USD"],
+  "regs": {
+    "ext": {}
+  },
+  "ext": {
+    "eskimiNbr": 1
+  }
+}
